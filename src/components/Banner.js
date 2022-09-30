@@ -4,6 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from "react-router-hash-link";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -12,7 +13,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Back-end Developer", "Photographer" ];   //Per Cambiare le cose che cambiano ci cambiano qui 
-  const period = 2000;
+  const period = 1500;   // tempo necessario per cancellare la scitta
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -58,7 +59,7 @@ export const Banner = () => {
                 <span className="tagline">Benvenuti nel mio Portfolio</span>
                 <h1>{`Hi! I'm Gerardo`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Back-end Developer", "Photographer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Contattami <ArrowRightCircle size={25} /></button>
+                  <a href="#connect"><button onClick={() => console.log('connect')}>Contattami <ArrowRightCircle size={25} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>

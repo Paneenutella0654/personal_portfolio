@@ -22,6 +22,11 @@
   box-sizing: border-box;
 }
 
+a {
+  color: white !important;
+  text-decoration:none !important;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
