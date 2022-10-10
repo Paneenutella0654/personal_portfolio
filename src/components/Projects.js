@@ -11,6 +11,24 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: "Autolavaggio",
+      description: "Database development for managing a car wash",
+      imgUrl: projImg1,
+      Url:"https://github.com/Paneenutella0654/Autolavaggio.git",
+    },
+    {
+      title: "MGCG",
+      description: "E-Commerce Projectof spare parts for cars",
+      imgUrl: projImg2,
+      Url:"https://github.com/Paneenutella0654/MGCG_TSW.git",
+    },
+    {
+      title: "Temp",
+      description: "Design & Development",
+      imgUrl: projImg3,
+      Url:"https://www.google.com",
+    },
+    /*{
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg1,
@@ -27,25 +45,7 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: projImg3,
       Url:"https://www.google.com",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      Url:"https://www.google.com",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-      Url:"https://www.google.com",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      Url:"https://www.google.com",
-    },
+    },*/
   ];
 
   return (
