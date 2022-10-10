@@ -3,13 +3,17 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import photoImg1 from "../assets/img/photoImg1.jpg";
+import photoImg2 from "../assets/img/photoImg2.jpg";
+import photoImg3 from "../assets/img/photoImg3.jpg";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const coding = [
     {
       title: "Autolavaggio",
       description: "Database development for managing a car wash",
@@ -28,25 +32,44 @@ export const Projects = () => {
       imgUrl: projImg3,
       Url:"https://www.google.com",
     },
-    /*{
-      title: "Business Startup",
+  ];
+
+  const photo = [
+    {
+      title: "Manarola",
+      description: "Database development for managing a car wash",
+      imgUrl: photoImg1,
+    },
+    {
+      title: "Riomaggiore",
+      description: "E-Commerce Projectof spare parts for cars",
+      imgUrl: photoImg2,
+    },
+    {
+      title: "Calitri",
       description: "Design & Development",
+      imgUrl: photoImg3,
+    },
+  ];
+
+  const grafic = [
+    {
+      title: "Logo",
+      description: "Database development for managing a car wash",
       imgUrl: projImg1,
-      Url:"https://www.google.com",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Logo",
+      description: "E-Commerce Projectof spare parts for cars",
       imgUrl: projImg2,
-      Url:"https://www.google.com",
     },
     {
-      title: "Business Startup",
+      title: "Concpet",
       description: "Design & Development",
       imgUrl: projImg3,
-      Url:"https://www.google.com",
-    },*/
+    },
   ];
+
 
   return (
     <section className="project" id="project">
@@ -74,7 +97,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">   
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          coding.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -88,7 +111,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="second">   
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          photo.map((project, index) => {  //TODO Aggiungere la funzione che mi consete di aprire la foto in un altra pagina 
                             return (
                               <ProjectCard
                                 key={index}
@@ -102,7 +125,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">   
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          grafic.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
