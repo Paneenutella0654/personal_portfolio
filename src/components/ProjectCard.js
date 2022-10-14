@@ -6,11 +6,10 @@ export const ProjectCard = ({ title, description, imgUrl, Url }) => {
       <div className="proj-imgbx">
         <img src={imgUrl} />
         <div className="proj-txtx">
-          <a href={Url}><h4>{title}</h4></a>
+          <a href={Url} target="_blank" rel="noopener noreferrer" ><h4>{title}</h4></a>
           <span>{description}</span>
         </div>
       </div>
     </Col>
   )
 }
- // Nel Indirizzamento mettere la possibita di aprire la pagine in un altra scheda in modo da non rimuovere il sito

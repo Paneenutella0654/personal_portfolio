@@ -51,10 +51,10 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon4} alt="GitHub" /></a>
-                <a href="#"><img src={navIcon2} alt="Facebook" /></a>
-                <a href="#"><img src={navIcon3} alt="Instagram" /></a>
-                <a href="#"><img src={navIcon1} alt="Linkdein" /></a>
+                <a href="https://github.com/Paneenutella0654" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="GitHub" /></a>
+                <a href="https://www.facebook.com/gerardo_frino.7/" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Facebook" /></a>
+                <a href="https://www.instagram.com/gerardo_frino/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
+                <a href="https://www.linkedin.com/in/gerardo-frino-59655a235/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Linkdein" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Contattami</span></button>
