@@ -36,18 +36,18 @@ export const Projects = () => {
 
   const photo = [
     {
-      title: "Manarola",
-      description: "Database development for managing a car wash",
+      title: "Tellaro",
+      description: "Italy, Liguria",
       imgUrl: photoImg1,
     },
     {
       title: "Riomaggiore",
-      description: "E-Commerce Projectof spare parts for cars",
+      description: "Italy, Liguria",
       imgUrl: photoImg2,
     },
     {
       title: "Calitri",
-      description: "Design & Development",
+      description: "Italy, Campania",
       imgUrl: photoImg3,
     },
   ];
