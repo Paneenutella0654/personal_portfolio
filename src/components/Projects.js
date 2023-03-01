@@ -27,10 +27,10 @@ export const Projects = () => {
       Url:"https://github.com/Paneenutella0654/MGCG_TSW.git",
     },
     {
-      title: "Temp",
-      description: "Design & Development",
+      title: "Enia",
+      description: "👨‍🌾 Web application built to support farmers and crops 👨‍🌾",
       imgUrl: projImg3,
-      Url:"https://www.google.com",
+      Url:"https://github.com/IAgricolture/EnIA",
     },
   ];
 
