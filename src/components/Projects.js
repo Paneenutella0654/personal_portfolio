@@ -78,7 +78,7 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>   // classi necessari per rendere anumtata l'interazione (quando scorro sia verso il basso che verso l'alto ) 
+              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
                 <p>Here are some of my projects ranging from coding to photography and some graphic projects.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -93,7 +93,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Graphic</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}> 
+                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated" : ""}> 
                     <Tab.Pane eventKey="first">   
                       <Row>
                         {
