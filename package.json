@@ -1,8 +1,8 @@
 {
-  "homepage": "https://paneenutella0654.github.io/personal_portfolio/",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://paneenutella0654.github.io/personal_portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@testing-library/jest-dom": "^5.16.4",
