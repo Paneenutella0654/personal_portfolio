@@ -14,6 +14,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Back-end Developer", "Photographer" ];   //Per Cambiare le cose che cambiano ci cambiano qui 
   const period = 1500;   // tempo necessario per cancellare la scitta
+  const [isVisibleOnce, setIsVisibleOnce] = useState(false);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -48,12 +49,19 @@ export const Banner = () => {
     }
   }
 
+  const handleVisibilityChange = (isVisible) => {
+    if (isVisible && !isVisibleOnce) {
+      setIsVisibleOnce(true);
+      // Esegui le azioni che desideri quando la proprietà diventa visibile una volta
+    }
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
+            <TrackVisibility onChange={handleVisibilityChange}>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Benvenuti nel mio Portfolio</span>
@@ -64,7 +72,7 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
+            <TrackVisibility onChange={handleVisibilityChange}>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img src={headerImg} alt="Header Img"/>
