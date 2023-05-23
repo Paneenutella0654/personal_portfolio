@@ -64,7 +64,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Benvenuti nel mio Portfolio</span>
+                <span className="tagline">Benvenuti</span>
                 <h1>{`Hi! I'm Gerardo`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Back-end Developer", "Photographer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>21 years old, living in Campania, I am a junior developer and a photographer. I program and make photos because it is the language with which I love to tell my clients' stories. I would like to bring the modern language of the web combined with the tradition of photographs to create unique concepts both photographic but also programming that can excite the people who look at them.</p>
                   <a href="#connect"><button onClick={() => console.log('connect')}>Contattami <ArrowRightCircle size={25} /></button></a>
